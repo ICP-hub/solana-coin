@@ -1,0 +1,6 @@
+.tech-sec{
+    @apply w-screen flex flex-col items-center bg-footerBG pt-10 pb-20
+}
+.tech-sec-text{
+    @apply text-white opacity-80 text-xl w-[50vw] text-center my-4
+}

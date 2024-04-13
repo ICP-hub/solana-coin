@@ -1,0 +1,10 @@
+.sec-title{
+    @apply w-screen flex flex-col items-center m-0
+}
+.sec-title-text{
+    @apply text-white font-extrabold my-0 p-0 align-text-top;
+    font-size: 5rem;
+}
+.sec-title-line{
+    @apply w-1/4 bg-purple-line h-0.5 relative min-w-80
+}

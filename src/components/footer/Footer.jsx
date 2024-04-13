@@ -33,7 +33,7 @@ const Footer = () => {
         {
           footerData.columns.map((column)=>(
             <div className="footer-col">
-              <h4 className="footer-col-head"></h4>
+              <h4 className="footer-col-head">{column.title}</h4>
                 {
                   column.links.map((link)=>(
                     <a href="#" className="footer-col-link">

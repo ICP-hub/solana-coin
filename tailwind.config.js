@@ -9,8 +9,24 @@ export default {
       colors:{
         footerBG:"#27262E",
         white:"#FFFFFF",
-        black:"#000000"
-      }
+        black:"#000000",
+        purple:{
+          line:"#9D6DFF"
+        },
+        brown:{
+          light:"#7D7578",
+          dark:"#494345"
+        },
+        blue:{
+          darkCircle:"#150336",
+          normalBG:"#24055A"
+        }
+      },
+      fontFamily: {
+        poppins: "Poppins",
+        lato: "Lato",
+        playfair: "Playfair Display",
+      },
     },
   },
   plugins: [],

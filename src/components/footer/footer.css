@@ -1,24 +1,24 @@
 .footer-sec{
-    @apply w-screen bg-footerBG flex justify-around py-5;
+    @apply w-screen bg-footerBG flex flex-wrap justify-evenly pt-10 pb-14 pr-28;
 }
 .footer-about{
-
+    @apply w-1/4
 }
 .footer-about-head{
-
+    @apply text-3xl text-white font-bold mb-3
 }
 .footer-about-text{
-
+    @apply text-white text-base opacity-40 font-normal
 }
 .footer-column-cont{
-
+    @apply flex flex-wrap w-2/5 justify-between
 }
 .footer-col{
-
+    @apply flex flex-col items-start mr-4
 }
 .footer-col-head{
-
+    @apply font-black text-white text-xl mb-3
 }
 .footer-col-link{
-
+    @apply no-underline text-white opacity-40 text-base font-bold my-1.5
 }
