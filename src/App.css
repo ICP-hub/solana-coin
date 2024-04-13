@@ -1,0 +1,6 @@
+.first{
+  @apply flex justify-center items-center h-full;
+}
+.first h1{
+  @apply font-serif text-blue-950 text-4xl;
+}
