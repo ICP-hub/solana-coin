@@ -1,0 +1,27 @@
+.hero-sec{
+    @apply w-screen flex justify-around items-center bg-footerBG pt-10 pb-20
+}
+.hero-data-cont{
+    @apply w-1/3 flex flex-col items-start
+}
+.hero-data-heading-cont{
+    @apply w-full
+}
+.hero-data-heading1{
+    @apply text-7xl text-white font-light my-6
+}
+.hero-data-heading2{
+    @apply text-7xl text-white font-extrabold my-6
+}
+.hero-data-btn-cont{
+    @apply w-2/5 flex justify-between my-6
+}
+.hero-data-btn-text{
+    @apply text-2xl text-white font-semibold
+}
+.hero-data-btn{
+    @apply text-2xl text-white font-semibold
+}
+.hero-img{
+
+}

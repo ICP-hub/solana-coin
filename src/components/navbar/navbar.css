@@ -1,0 +1,15 @@
+.navbar{
+    @apply w-screen flex justify-around items-center bg-footerBG pt-10 pb-20
+}
+.nav-title{
+    @apply text-white text-2xl
+}
+.nav-link-cont{
+    @apply w-1/4 flex justify-between
+}
+.nav-link{
+    @apply text-white text-xl
+}
+.nav-claim-btn{
+    @apply w-28 rounded-xl text-white
+}

@@ -10,7 +10,7 @@ const featureList=[
 
 const Features = () => {
   return (
-    <div className='feature-sec'>
+    <div className='feature-sec' id='features'>
       <Title title={"KEY FEATURES"}/>
       <p className="feature-sec-text">
       Small, But Mighty- Straight Talk: No Tricks, Just Treats
