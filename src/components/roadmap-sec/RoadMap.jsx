@@ -11,7 +11,22 @@ const RoadMap = () => {
       <div className="roadmap-text-cont">
         <p className="roadmap-text"> The Path Ahead</p>
       </div>
-      <div className="roadmap-line-cont"></div>
+      <div className="roadmap-line-cont">
+        <div className="roadmap-node-cont">
+          <div className="roadmap-node-circle"/>
+          <div className="roadmap-node-line"/>
+        </div>
+        <div className="roadmap-line"/>
+        <div className="roadmap-rev-node-cont">
+          <div className="roadmap-node-line"/>
+          <div className="roadmap-node-circle"/>
+        </div>
+        <div className="roadmap-line"/>
+        <div className="roadmap-node-cont">
+          <div className="roadmap-node-circle"/>
+          <div className="roadmap-node-line"/>
+        </div>
+      </div>
       <div className="roadmap-card-cont">
         <RoadmapCard text={"Q1 2024"}/>
         <RoadmapCard text={"Q2 2024"} subtext={"& Beyond"}/>
