@@ -1,3 +1,16 @@
 .token-sec{
     @apply w-screen flex flex-col items-center bg-footerBG pt-10 pb-20
 }
+.token-chart-cont{
+    @apply w-[60vw] flex justify-between items-center my-8
+}
+.token-chart{
+    @apply w-1/3
+}
+.token-chart-text-cont{
+    @apply w-[43%] h-[28vh] flex items-center justify-center border-red-100 rounded-xl  px-10;
+    border-width: 1px;
+}
+.token-chart-text{
+    @apply text-6xl text-white font-semibold text-center
+}

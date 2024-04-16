@@ -1,3 +1,33 @@
 .roadmap-sec{
     @apply w-screen flex flex-col items-center bg-footerBG pt-10 pb-20
 }
+.roadmap-text-cont{
+    @apply w-full flex justify-center my-6
+}
+.roadmap-text{
+    @apply text-white opacity-80 text-xl text-center
+}
+.roadmap-line-cont{
+
+}
+.roadmap-card-cont{
+    @apply flex w-3/5 justify-between items-center
+}
+
+/* roadmap card styling */
+
+.roadmap-card{
+    @apply w-[19vw] h-[19vw] bg-blue-normalBG rounded-xl flex flex-col items-center justify-center
+}
+.roadmap-card-text{
+    @apply text-white text-5xl font-extrabold text-center
+}
+.roadmap-card-subtext{
+
+}
+.roadmap-card-c1{
+
+}
+.roadmap-card-c2{
+
+}

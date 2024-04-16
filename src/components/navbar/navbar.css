@@ -2,14 +2,19 @@
     @apply w-screen flex justify-around items-center bg-footerBG pt-10 pb-20
 }
 .nav-title{
-    @apply text-white text-2xl
+    @apply text-3xl text-white font-bold ;
 }
 .nav-link-cont{
     @apply w-1/4 flex justify-between
 }
 .nav-link{
-    @apply text-white text-xl
+    @apply text-white text-lg
 }
 .nav-claim-btn{
-    @apply w-28 rounded-xl text-white
+    @apply rounded-xl text-white text-base font-semibold bg-gradient-to-br from-purple-light to-purple-dark py-3 px-11
 }
+.nav-claim-btn:hover{
+    @apply rounded-xl text-white text-base font-semibold bg-gradient-to-br from-purple-dark to-purple-light py-3 px-11 shadow-md shadow-purple-900
+}
+
+/* animations */

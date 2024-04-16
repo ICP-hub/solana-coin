@@ -11,7 +11,9 @@ export default {
         white:"#FFFFFF",
         black:"#000000",
         purple:{
-          line:"#9D6DFF"
+          line:"#9D6DFF",
+          light:"#5326AC",
+          dark:"#28015D"
         },
         brown:{
           light:"#7D7578",
@@ -19,7 +21,7 @@ export default {
         },
         blue:{
           darkCircle:"#150336",
-          normalBG:"#24055A"
+          normalBG:"#23055B"
         }
       },
       fontFamily: {
