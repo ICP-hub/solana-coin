@@ -37,14 +37,18 @@
 
 .roadmap-card{
     @apply w-[19vw] h-[19vw] bg-blue-normalBG rounded-xl flex flex-col items-center justify-center z-10 relative overflow-hidden;
-    transition: 2s;
+    transition: 1s;
 }
 .roadmap-card:hover{
     transform:rotateY(180deg);
-    
+    @apply bg-purple-light
 }
 .roadmap-card-text{
-    @apply text-white text-5xl font-extrabold text-center z-30
+    @apply text-white text-5xl font-extrabold text-center z-30;
+    transition: 1s;
+}
+.roadmap-card-data{
+    @apply text-white text-xl font-normal text-center z-30 w-10/12 mt-4 -scale-x-100
 }
 .roadmap-card-subtext{
     @apply text-white text-3xl font-extrabold text-center mt-2 z-30

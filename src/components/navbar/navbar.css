@@ -11,10 +11,10 @@
     @apply text-white text-lg
 }
 .nav-claim-btn{
-    @apply rounded-xl text-white text-base font-semibold bg-gradient-to-br from-purple-light to-purple-dark py-3 px-11
+    @apply rounded-xl text-white text-base font-semibold bg-gradient-to-br from-purple-medium to-purple-dark py-3 px-11
 }
 .nav-claim-btn:hover{
-    @apply rounded-xl text-white text-base font-semibold bg-gradient-to-br from-purple-dark to-purple-light py-3 px-11 shadow-md shadow-purple-900
+    @apply rounded-xl text-white text-base font-semibold bg-gradient-to-br from-purple-dark to-purple-medium py-3 px-11 shadow-md shadow-purple-900
 }
 
 /* animations */

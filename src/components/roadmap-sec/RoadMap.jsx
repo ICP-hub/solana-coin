@@ -4,6 +4,18 @@ import Title from '../re-usables/Title'
 import RoadmapCard from './RoadmapCard'
 
 
+const roadmapList=[
+  {
+    title:"Q1 2024",
+    data:"The future is unwritten, and the path uncharted. With the  community at the helm, $ICHUA is poised for a journey of spontaneous adventures,  boundless possibilities, and meme magic."
+  },
+  {
+    title:"Q2 2024",
+    subtext:"& Beyond",
+    data:"Thegenesis of $ICHUA- Smart contract deployment, website launch, and  the building of a social media empire."
+  }
+]
+
 const RoadMap = () => {
   return (
     <div className='roadmap-sec' id='roadmap'>
@@ -28,8 +40,8 @@ const RoadMap = () => {
         </div>
       </div>
       <div className="roadmap-card-cont">
-        <RoadmapCard text={"Q1 2024"}/>
-        <RoadmapCard text={"Q2 2024"} subtext={"& Beyond"}/>
+        <RoadmapCard text={roadmapList[0].title} data={roadmapList[0].data}/>
+        <RoadmapCard text={roadmapList[1].title} subtext={roadmapList[1].subtext} data={roadmapList[1].data}/>
       </div>
     </div>
   )

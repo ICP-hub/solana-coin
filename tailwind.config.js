@@ -12,8 +12,9 @@ export default {
         black:"#000000",
         purple:{
           line:"#9D6DFF",
-          light:"#5326AC",
-          dark:"#28015D"
+          medium:"#5326AC",
+          dark:"#28015D",
+          light:"#8159C6"
         },
         brown:{
           light:"#7D7578",
