@@ -4,8 +4,14 @@ import Title from '../re-usables/Title'
 import FeatureCard from './FeatureCard'
 
 const featureList=[
-  "NoTaxes, NoBullshit",
-  "Community-Driven Meme Power- By the Pack, For the Pack"
+  {
+    text:"NoTaxes, NoBullshit",
+    data:"ICHuaHua is all about keeping it simple and straightforward.  No hidden fees, no sneaky taxes. Just like throwing a ball and chasing it, $ICHUA is  simple and fun."
+  },
+  {
+    text:"Community-Driven Meme Power- By the Pack, For the Pack",
+    data:"This ain't just our  coin; it's yours. $ICHUA thrives on community vibes. This is a coin for the people,  powered by the people."
+  }
 ]
 
 const Features = () => {
@@ -18,7 +24,7 @@ const Features = () => {
       <div className="feature-card-cont">
         {
           featureList.map((feature)=>(
-            <FeatureCard text={feature}/>
+            <FeatureCard text={feature.text} data={feature.data}/>
           ))
         }
       </div>

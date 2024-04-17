@@ -1,5 +1,8 @@
 .hero-sec{
-    @apply w-screen flex justify-around items-center bg-footerBG pt-10 pb-20
+    @apply w-screen flex flex-col items-center bg-footerBG pt-10 pb-20
+}
+.hero-sec-main{
+    @apply w-screen flex justify-around items-center bg-footerBG 
 }
 .hero-data-cont{
     @apply w-1/3 flex flex-col items-start
@@ -26,5 +29,21 @@
     @apply text-2xl text-white font-semibold bg-gradient-to-br from-purple-dark to-purple-medium px-7 py-2 rounded-md
 }
 .hero-img{
+    @apply w-[30vw] h-[28vw]
+}
 
+
+/* circle button cont  */
+
+.hero-start-div{
+    @apply h-11 w-screen flex items-center justify-center bg-grey-light mb-20 relative
+}
+.hero-start-text{
+    @apply text-white font-semibold text-2xl
+}
+.hero-start-btn{
+    @apply absolute
+}
+#circle-text{
+    @apply relative w-80 h-80 rotate-2
 }

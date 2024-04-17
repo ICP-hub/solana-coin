@@ -23,6 +23,9 @@ export default {
         blue:{
           darkCircle:"#150336",
           normalBG:"#23055B"
+        },
+        grey:{
+          light:"#B2AEB1"
         }
       },
       fontFamily: {

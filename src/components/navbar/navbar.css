@@ -8,7 +8,11 @@
     @apply w-1/4 flex justify-between
 }
 .nav-link{
-    @apply text-white text-lg
+    @apply text-white text-lg;
+    transition: 1s;
+}
+.nav-link:hover{
+    @apply -translate-y-2
 }
 .nav-claim-btn{
     @apply rounded-xl text-white text-base font-semibold bg-gradient-to-br from-purple-medium to-purple-dark py-3 px-11
