@@ -1,0 +1,3 @@
+.gradient-top-right{
+    /* @apply absolute right-0 bg-gradient-radial from-gold-gradDark to-gold-gradLight w-1/3 h-[30vw] */
+}

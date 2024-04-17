@@ -41,9 +41,32 @@
 .hero-start-text{
     @apply text-white font-semibold text-2xl
 }
-.hero-start-btn{
-    @apply absolute
+.hero-start-btn-cont{
+    @apply absolute top-[-4.5rem] left-40;
+    /* animation: rotate 8s linear infinite; */
 }
-#circle-text{
-    @apply relative w-80 h-80 rotate-2
+.hero-circle-text{
+    @apply text-white
+}
+.hero-start-btn{
+    @apply text-white font-bold text-4xl absolute top-[40%] left-[20%]
+}
+.rotate{
+    animation: rotate 6s linear infinite;
+}
+.unrotate{
+    animation: unrotate 6s linear infinite;
+}
+
+@keyframes rotate {
+    from{
+        rotate: 360deg;
+    }
+    
+}
+@keyframes unrotate {
+    from{
+        rotate: -360deg;
+    }
+    
 }

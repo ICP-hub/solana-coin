@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      },
       colors:{
         footerBG:"#27262E",
         white:"#FFFFFF",
@@ -26,6 +29,10 @@ export default {
         },
         grey:{
           light:"#B2AEB1"
+        },
+        gold:{
+          gradDark:"#BC802C",
+          gradLight:"#FFDEAC"
         }
       },
       fontFamily: {
