@@ -11,7 +11,7 @@ const RoadmapCard = ({text, subtext, data}) => {
       {
         mouseIn?
         <>
-        <div className="roadmap-card-text -scale-x-100">
+        <div className="roadmap-card-text2">
           {text}
         </div>
         <div className="roadmap-card-data">

@@ -48,7 +48,10 @@
 }
 .roadmap-card-text{
     @apply text-white text-5xl font-extrabold text-center z-30;
-    transition: 1s ease-in-out;
+}
+.roadmap-card-text2{
+    @apply text-white text-5xl font-extrabold text-center z-30 -scale-x-100;
+
 }
 .roadmap-card-data{
     @apply text-white text-xl font-normal text-center z-30 w-10/12 mt-4 -scale-x-100
