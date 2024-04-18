@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar from '../components/navbar/Navbar'
+import Navbar from '../components/home/navbar/Navbar'
 import { useNavigate } from 'react-router-dom'
-import Footer from '../components/footer/Footer'
+import Footer from '../components/home/footer/Footer'
 
 const Buy = () => {
     const nav=useNavigate()
