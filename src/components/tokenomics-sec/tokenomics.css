@@ -10,6 +10,7 @@
 .token-chart-text-cont{
     @apply w-[43%] h-[28vh] flex flex-col justify-center border-red-100 rounded-xl  px-10;
     border-width: 1px;
+    transition: 1s;
 }
 .token-chart-text{
     @apply text-6xl text-white font-semibold text-center
@@ -23,6 +24,7 @@
 .token-chart-text-cont2{
     @apply w-[43%] h-[28vh] flex flex-col justify-center border-white rounded-xl  pl-5 ;
     border-width: 1px;
+    transition: 1s;
 }
 .token-chart-text-head-cont{
     @apply flex items-center w-full

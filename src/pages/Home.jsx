@@ -7,13 +7,15 @@ import TechSec from '../components/tech-sec/TechSec'
 import RoadMap from '../components/roadmap-sec/RoadMap'
 import Footer from '../components/footer/Footer'
 import Gradients from '../components/gradientsHome/Gradients'
+import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
+  const nav=useNavigate()
   return (
     <div className='home-page'>
       {/* <Gradients/> */}
-      <Navbar/>
-      <HeroSec/>
+      <Navbar nav={nav}/>
+      <HeroSec nav={nav}/>
       <Tokenomics/>
       <Features/>
       <TechSec/>

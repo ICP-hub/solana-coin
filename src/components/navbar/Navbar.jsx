@@ -1,7 +1,7 @@
 import React from 'react'
 import './navbar.css'
 
-const Navbar = () => {
+const Navbar = ({nav}) => {
   return (
     <div className='navbar'>
       <div className="nav-title-cont">
@@ -9,12 +9,12 @@ const Navbar = () => {
         <div className="nav-cursor"/>
       </div>      
       <div className="nav-link-cont">
-        <a href="/" className="nav-link">Home</a>
-        <a href="#token" className="nav-link">Tokenomics</a>
-        <a href="#features" className="nav-link">Features</a>
-        <a href="#roadmap" className="nav-link">Roadmap</a>
+        <p className="nav-link" onClick={()=>nav('/')}>Home</p>
+        <a className="nav-link" href="/#token" onClick={()=>nav('/#token')}>Tokenomics</a>
+        <a className="nav-link" href="/#features" onClick={()=>nav('/#features')}>Features</a>
+        <a className="nav-link" href="/#roadmap" onClick={()=>nav('/#roadmap')}>Roadmap</a>
       </div>
-      <button className="nav-claim-btn">CLAIM</button>
+      <button className="nav-claim-btn" onClick={()=>nav('/claim')}>CLAIM</button>
     </div>
   )
 }

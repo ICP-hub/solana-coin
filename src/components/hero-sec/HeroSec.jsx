@@ -2,7 +2,7 @@ import React from 'react'
 import './herosec.css'
 import HeroStartBtn from './HeroStartBtn'
 
-const HeroSec = () => {
+const HeroSec = ({nav}) => {
   return (
     <div className="hotel-sec">
       <div className='hero-sec-main'>
@@ -13,7 +13,7 @@ const HeroSec = () => {
           </div>
           <div className="hero-data-btn-cont">
             <h4 className="hero-data-btn-text">BUY CATCH</h4>
-            <button className="hero-data-btn">BUY</button>
+            <button className="hero-data-btn" onClick={()=>nav('/buy')}>BUY</button>
           </div>
         </div>
         <img src="hero.png" alt="hero section dog ichuahua" className='hero-img'/>

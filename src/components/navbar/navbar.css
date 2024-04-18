@@ -16,7 +16,7 @@
     @apply w-1/4 flex justify-between
 }
 .nav-link{
-    @apply text-white text-lg;
+    @apply text-white text-lg cursor-pointer;
     transition: 1s;
 }
 .nav-link:hover{
