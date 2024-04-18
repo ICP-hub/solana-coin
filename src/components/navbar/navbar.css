@@ -1,8 +1,16 @@
 .navbar{
     @apply w-screen flex justify-around items-center bg-footerBG pt-10 pb-20
 }
+.nav-title-cont{
+    @apply flex justify-start
+}
+/* .nav-cursor{
+    @apply h-8 w-1 ml-1 bg-white;
+    animation: flicker 0.5s ;
+} */
 .nav-title{
-    @apply text-3xl text-white font-bold ;
+    @apply text-3xl text-white font-bold overflow-hidden;
+    animation: typing 3s steps(7, end);
 }
 .nav-link-cont{
     @apply w-1/4 flex justify-between
@@ -22,3 +30,20 @@
 }
 
 /* animations */
+
+@keyframes flicker {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes typing {
+    0%{
+        width: 0;
+    }
+    17%{
+        width: 160px;
+    }
+}

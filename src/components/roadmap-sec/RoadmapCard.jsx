@@ -37,6 +37,7 @@ const RoadmapCard = ({text, subtext, data}) => {
           </div>
           <div className="roadmap-card-c1"/>
           <div className="roadmap-card-c2"/>
+          
         </> 
       }
     </div>

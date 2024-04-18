@@ -42,6 +42,7 @@ const RoadMap = () => {
       <div className="roadmap-card-cont">
         <RoadmapCard text={roadmapList[0].title} data={roadmapList[0].data}/>
         <RoadmapCard text={roadmapList[1].title} subtext={roadmapList[1].subtext} data={roadmapList[1].data}/>
+        <img src="roadmap.png" alt="dog playing with token" className="roadmap-img" />
       </div>
     </div>
   )

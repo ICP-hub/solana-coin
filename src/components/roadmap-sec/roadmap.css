@@ -8,7 +8,10 @@
     @apply text-white opacity-80 text-xl text-center
 }
 .roadmap-card-cont{
-    @apply flex w-3/5 justify-between items-center mt-8 mb-20
+    @apply flex w-3/5 justify-between items-center mt-8 mb-20 relative
+}
+.roadmap-img{
+    @apply w-[15vw] h-[15vw] absolute left-[35%] bottom-0 z-40
 }
 
 /* node tree styling */
