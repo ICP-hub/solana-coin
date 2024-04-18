@@ -10,7 +10,7 @@
 } */
 .nav-title{
     @apply text-3xl text-white font-bold overflow-hidden;
-    animation: typing 3s steps(7, end);
+    animation: typing 5s steps(7, end);
 }
 .nav-link-cont{
     @apply w-1/4 flex justify-between
