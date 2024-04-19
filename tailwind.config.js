@@ -33,7 +33,9 @@ export default {
         gold:{
           gradDark:"#BC802C",
           gradLight:"#FFDEAC"
-        }
+        },
+        tWhite:"rgb(255,255,255,0.4)",
+        tBlack:"rgb(0,0,0,0.4)"
       },
       fontFamily: {
         poppins: "Poppins",

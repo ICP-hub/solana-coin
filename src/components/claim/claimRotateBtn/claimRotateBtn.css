@@ -1,0 +1,15 @@
+.claim-rotate-btn-cont{
+    @apply absolute top-[-0.6rem] left-56;
+}
+.claim-circle-text{
+    @apply text-white
+}
+.claim-rotate-btn{
+    @apply text-white font-bold text-4xl absolute top-[40%] left-[20%]
+}
+.rotate{
+    animation: rotate 6s linear infinite;
+}
+.unrotate{
+    animation: unrotate 6s linear infinite;
+}
