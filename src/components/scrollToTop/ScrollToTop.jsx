@@ -12,7 +12,7 @@ const ScrollToTop = () => {
         }
     }
     const scroll=()=>{
-
+        window.scrollTo(0,0)
     }
 
     useEffect(() => {
@@ -25,7 +25,7 @@ const ScrollToTop = () => {
 
   if(visible){
     return(
-        <button className='scroll-cont'>
+        <button className='scroll-cont' onClick={scroll}>
             <IoIosArrowRoundUp className='scroll-icon'/>
         </button>
     )
