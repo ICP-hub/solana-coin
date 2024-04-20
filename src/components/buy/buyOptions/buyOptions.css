@@ -1,0 +1,18 @@
+.buy-opt-cont{
+    @apply mr-[10%] w-[32%] py-8 border-white border-[0.5px] rounded-2xl flex flex-col items-center bg-gradient-to-r from-tWhite to-tBlack
+}
+.buy-title{
+    @apply text-4xl text-white font-extrabold
+}
+.buy-title-light{
+    @apply text-4xl text-white font-extralight my-6
+}
+.buy-btn-cont{
+    @apply grid grid-cols-100 w-[90%] gap-5 my-10
+}
+.buy-opt-btn{
+    @apply flex items-center justify-center px-6 py-3 bg-gradient-to-br from-purple-medium to-purple-dark rounded-xl h-16
+}
+.buy-opt-icon{
+    @apply w-20 
+}

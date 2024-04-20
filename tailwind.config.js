@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      gridTemplateColumns:{
+        100:'repeat( auto-fit, minmax(150px, 1fr))'
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },
@@ -35,7 +38,9 @@ export default {
           gradLight:"#FFDEAC"
         },
         tWhite:"rgb(255,255,255,0.4)",
-        tBlack:"rgb(0,0,0,0.4)"
+        tBlack:"rgb(0,0,0,0.4)",
+        scrollDark:"#6A483E",
+        scrollLight:"#8E5D45"
       },
       fontFamily: {
         poppins: "Poppins",

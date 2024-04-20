@@ -7,6 +7,7 @@ import TechSec from '../components/home/tech-sec/TechSec'
 import RoadMap from '../components/home/roadmap-sec/RoadMap'
 import Footer from '../components/home/footer/Footer'
 import { useNavigate } from 'react-router-dom'
+import ScrollToTop from '../components/scrollToTop/ScrollToTop'
 
 const Home = () => {
   const nav=useNavigate()
@@ -20,6 +21,7 @@ const Home = () => {
       <TechSec/>
       <RoadMap/>
       <Footer/>
+      <ScrollToTop/>
     </div>
   )
 }
