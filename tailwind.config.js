@@ -20,7 +20,8 @@ export default {
           line:"#9D6DFF",
           medium:"#5326AC",
           dark:"#28015D",
-          light:"#8159C6"
+          light:"#8159C6",
+          grad:"#803795"
         },
         brown:{
           light:"#7D7578",
@@ -40,7 +41,10 @@ export default {
         tWhite:"rgb(255,255,255,0.4)",
         tBlack:"rgb(0,0,0,0.4)",
         scrollDark:"#6A483E",
-        scrollLight:"#8E5D45"
+        scrollLight:"#8E5D45",
+        transparent:'rgb(0,0,0,0)',
+        gradOrange:'#965212',
+        gradOrange2:'#CA7A4E'
       },
       fontFamily: {
         poppins: "Poppins",

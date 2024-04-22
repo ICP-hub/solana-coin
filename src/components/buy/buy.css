@@ -1,12 +1,12 @@
 .buy-hero-sec{
-    @apply w-screen flex justify-around items-start bg-footerBG relative pt-10 pb-0
+    @apply w-full flex justify-around items-start bg-footerBG relative pt-10 pb-0 overflow-x-hidden
 }
 .buy-img{
-    @apply w-[30%] z-10
+    @apply w-[30%] z-20
 }
 .buy-bottom-text-cont{
-    @apply flex justify-end absolute bottom-4 w-full bg-gradient-to-r from-white via-tWhite to-tBlack
+    @apply flex justify-end absolute bottom-0 w-full bg-gradient-to-r from-white via-tWhite to-tBlack
 }
 .buy-bottom-text{
-    @apply text-white text-2xl font-semibold py-2 mr-[20%] z-0
+    @apply text-white text-2xl font-semibold py-4 mr-[20%] z-0
 }

@@ -1,0 +1,9 @@
+.claim-grad-left{
+    @apply  absolute top-[45%] left-[-10%] blur-3xl bg-gradient-radial from-purple-grad to-transparent w-[40%] h-[30vw] z-0
+}   
+.claim-grad-right-top{
+    @apply  absolute top-[-45%] right-[-35%] blur-3xl bg-gradient-radial from-gold-gradDark via-gradOrange to-transparent w-[60%] h-[44vw] z-0
+}
+.claim-grad-right-bottom{
+    @apply  absolute top-[80%] right-[-10%] blur-3xl bg-gradient-radial from-gold-gradDark to-transparent w-[45%] h-[5vw] z-10
+}

@@ -1,5 +1,5 @@
 .navbar{
-    @apply w-screen flex justify-around items-center bg-footerBG pt-10 pb-20
+    @apply mt-10 w-screen flex justify-around items-center bg-footerBG pt-10 pb-20 
 }
 .nav-title-cont{
     @apply flex justify-start
@@ -9,7 +9,7 @@
     animation: flicker 0.5s ;
 } */
 .nav-title{
-    @apply text-3xl text-white font-bold overflow-hidden;
+    @apply text-3xl text-white font-bold overflow-hidden z-10;
     animation: typing 5s steps(7, end);
 }
 .nav-link-cont{
@@ -23,7 +23,7 @@
     @apply -translate-y-2
 }
 .nav-claim-btn{
-    @apply rounded-xl text-white text-base font-semibold bg-gradient-to-br from-purple-medium to-purple-dark py-3 px-11
+    @apply rounded-xl text-white text-base font-semibold bg-gradient-to-br from-purple-medium to-purple-dark py-3 px-11 z-10
 }
 .nav-claim-btn:hover{
     @apply rounded-xl text-white text-base font-semibold bg-gradient-to-br from-purple-dark to-purple-medium py-3 px-11 shadow-md shadow-purple-900

@@ -4,6 +4,7 @@ import Navbar from '../components/home/navbar/Navbar'
 import Footer from '../components/home/footer/Footer'
 import ClaimHeroSection from '../components/claim/ClaimHeroSection'
 import ScrollToTop from '../components/scrollToTop/ScrollToTop'
+import Gradients from '../components/claim/gradientsClaim/Gradients'
 
 const Claim = () => {
     const nav=useNavigate()
@@ -13,6 +14,7 @@ const Claim = () => {
         <ClaimHeroSection/>
         <Footer/>
         <ScrollToTop/>
+        <Gradients/>
     </div>
   )
 }

@@ -8,12 +8,13 @@ import RoadMap from '../components/home/roadmap-sec/RoadMap'
 import Footer from '../components/home/footer/Footer'
 import { useNavigate } from 'react-router-dom'
 import ScrollToTop from '../components/scrollToTop/ScrollToTop'
+import Gradients from '../components/home/gradientsHome/Gradients'
 
 const Home = () => {
   const nav=useNavigate()
   return (
     <div className='home-page'>
-      {/* <Gradients/> */}
+      <Gradients/>
       <Navbar nav={nav}/>
       <HeroSec nav={nav}/>
       <Tokenomics/>

@@ -1,0 +1,6 @@
+.buy-grad-left{
+    @apply  absolute top-[-45%] left-[-35%] blur-3xl bg-gradient-radial from-gold-gradDark via-gradOrange to-transparent w-[60%] h-[44vw] z-0
+}
+.buy-grad-right{
+    @apply  absolute top-[80%] right-[0%] blur-3xl bg-gradient-radial from-gradOrange2 to-gradOrange w-[35%] h-[5vw] z-10
+}

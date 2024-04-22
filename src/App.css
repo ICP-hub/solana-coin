@@ -1,6 +1,7 @@
 .app{
-  @apply w-screen flex justify-center items-center h-full bg-footerBG;
+  @apply w-screen flex justify-center items-center h-full bg-footerBG overflow-x-hidden;
 }
 html{
   scroll-behavior: smooth;
+  @apply overflow-x-hidden
 }

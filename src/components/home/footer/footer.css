@@ -1,5 +1,5 @@
 .footer-sec{
-    @apply w-screen bg-footerBG flex flex-wrap justify-evenly pt-10 pb-14 pr-28;
+    @apply w-screen bg-footerBG flex flex-wrap justify-evenly pt-10 pb-14 pr-28 z-40 relative
 }
 .footer-about{
     @apply w-1/4

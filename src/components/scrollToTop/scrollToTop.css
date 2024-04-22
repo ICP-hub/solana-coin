@@ -1,5 +1,5 @@
 .scroll-cont{
-    @apply fixed right-[5%] bottom-[12%] w-24 h-24 rounded-full border-2 border-white flex items-center justify-center bg-gradient-to-b from-scrollDark to-scrollLight
+    @apply fixed right-[5%] bottom-[12%] w-24 h-24 rounded-full border-2 border-white flex items-center justify-center bg-gradient-to-b from-scrollDark to-scrollLight z-50
 }
 .scroll-icon{
     @apply text-white text-6xl font-extralight animate-bounce

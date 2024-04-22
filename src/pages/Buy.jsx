@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import Footer from '../components/home/footer/Footer'
 import BuyHeroSection from '../components/buy/BuyHeroSection'
 import ScrollToTop from '../components/scrollToTop/ScrollToTop'
+import Gradients from '../components/buy/gradientsBuy/Gradients'
 
 const Buy = () => {
     const nav=useNavigate()
@@ -13,6 +14,7 @@ const Buy = () => {
         <BuyHeroSection/>
         <Footer/>
         <ScrollToTop/>
+        <Gradients/>
     </div>
   )
 }
