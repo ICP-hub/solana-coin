@@ -2,7 +2,7 @@
     @apply w-screen flex justify-around items-start bg-footerBG relative pt-10 pb-0  
 }
 .claim-img{
-    @apply w-[30%] z-20
+    @apply w-[30%] z-[11]
 }
 .claim-bottom-text-cont{
     @apply flex justify-end absolute bottom-0 w-full bg-gradient-to-r from-white via-tWhite to-transparent z-10

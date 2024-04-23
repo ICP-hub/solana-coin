@@ -1,7 +1,7 @@
 import React from 'react'
 import './claimInstructions.css'
 
-const ClaimInstructions = () => {
+const ClaimInstructions = ({setModalOpen}) => {
   return (
     <div className='claim-ins-cont'>
         <div className="claim-head-cont">
@@ -17,7 +17,7 @@ const ClaimInstructions = () => {
             <p className="claim-ins">2. Claim unlocked tokens</p>
             <p className="claim-ins font-semibold">3. Stake for extra rewards!</p>
         </div>
-        <button className="claim-connect-btn">
+        <button className="claim-connect-btn" onClick={()=>setModalOpen(true)}>
             Connect Wallet
         </button>
     </div>

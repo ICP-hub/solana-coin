@@ -1,0 +1,27 @@
+.connect-modal{
+    @apply w-1/4 bg-tBlack z-[60] absolute top-1/4 left-[37.5%] flex py-6 flex-col items-start pl-6 rounded-lg relative;
+}
+.connect-modal-overlay{
+    @apply bg-red-100 fixed 
+}
+.connect-modal-title{
+    @apply text-white text-4xl font-semibold mb-4
+}
+.connect-options-cont{
+    @apply flex flex-col w-[80%] items-start my-4 
+}
+.connect-option{
+    @apply px-4 py-2 flex justify-start rounded-lg bg-footerBG mb-3 w-2/3 cursor-pointer
+}
+.connect-option-text{
+    @apply text-lg font-bold text-white
+}
+.connect-option-icon{
+    @apply w-8 h-8 rounded-full mr-2 object-contain
+}
+.connect-modal-text{
+    @apply text-sm text-white font-medium my-6 text-center
+}
+.connect-wallet-close{
+    @apply text-white text-5xl absolute -right-3 -top-3 cursor-pointer
+}
