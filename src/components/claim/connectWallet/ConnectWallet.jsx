@@ -8,9 +8,7 @@ const ConnectWallet = ({modalOpen,setModalOpen,setBuyModal}) => {
     const receiver="AtgWtKg8t8W8j3QHLBTxPW68BhPTRQ3BnZDiWJQLcK9"
     const [err,setErr]=useState('')
     const {wallets,select,connect}=useWallet()
-    const connectWallet=async(index)=>{
-        select(wallets[index].adapter.name)
-        
+    const connectWallet=async(index)=>{        
         await connect().then((res)=>{
             console.log("connected")
             setModalOpen(false)
@@ -33,11 +31,17 @@ const ConnectWallet = ({modalOpen,setModalOpen,setBuyModal}) => {
         <h1 className="connect-modal-title">Connect your wallet</h1>
         <IoMdCloseCircleOutline className='connect-wallet-close' onClick={()=>setModalOpen(false)}/>
         <div className="connect-options-cont">
-            <div className="connect-option" onClick={()=>connectWallet(0)}>
+            <div className="connect-option" onClick={()=>{
+                select(wallets[0].adapter.name)
+                connectWallet(0)
+            }}>
                 <img src="phantomLogo.png" alt="phantom wallet" className="connect-option-icon" />
                 <h4 className="connect-option-text">Phantom</h4>    
             </div>
-            <div className="connect-option" onClick={()=>connectWallet(1)}>
+            <div className="connect-option" onClick={()=>{
+                select(wallets[1].adapter.name)
+                connectWallet(1)
+            }}>
                 <img src="solflareLogo.png" alt="solflare wallet" className="connect-option-icon" />
                 <h4 className="connect-option-text">Solflare</h4>    
             </div>
