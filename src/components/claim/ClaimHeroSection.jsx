@@ -4,6 +4,7 @@ import ClaimInstructions from './claimInstructions/ClaimInstructions'
 import CLaimRotateBtn from './claimRotateBtn/ClaimRotateBtn'
 import ConnectWallet from './connectWallet/ConnectWallet'
 import BuyToken from './buyToken/BuyToken'
+import { Toaster } from 'react-hot-toast'
 
 
 const ClaimHeroSection = () => {
@@ -21,7 +22,8 @@ const ClaimHeroSection = () => {
         </div>
         <CLaimRotateBtn/>
         <ConnectWallet modalOpen={modalOpen} setModalOpen={setModalOpen} setBuyModal={setBuyModal}/>
-        {/* <BuyToken buyModal={buyModal} setBuyModal={setBuyModal}/> */}
+        <BuyToken buyModal={buyModal} setBuyModal={setBuyModal}/>
+        <Toaster/>
     </div>
   )
 }

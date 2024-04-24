@@ -1,27 +1,26 @@
 .buy-modal{
-    @apply w-1/4 bg-tBlack z-[60] absolute top-1/4 left-[37.5%] flex py-6 flex-col items-start pl-6 rounded-lg relative;
-}
-.buy-modal-overlay{
-    @apply bg-red-100 fixed 
+    @apply w-1/4 bg-tBlack z-[60] absolute left-0 right-0 top-1/3 mx-auto flex py-6 flex-col items-start pl-6 rounded-lg relative;
 }
 .buy-modal-title{
-    @apply text-white text-4xl font-semibold mb-4
+    @apply text-white text-4xl font-semibold mb-3
 }
-.buy-options-cont{
-    @apply flex flex-col w-[80%] items-start my-4 
-}
-.buy-option{
-    @apply px-4 py-2 flex justify-start rounded-lg bg-footerBG mb-3 w-2/3 cursor-pointer
-}
-.buy-option-text{
-    @apply text-lg font-bold text-white
-}
-.buy-option-icon{
-    @apply w-8 h-8 rounded-full mr-2 object-contain
+.buy-modal-title2{
+    @apply text-white text-xl font-semibold mb-4
 }
 .buy-modal-text{
     @apply text-sm text-white font-medium my-6 text-center
 }
 .buy-wallet-close{
     @apply text-white text-5xl absolute -right-3 -top-3 cursor-pointer
+}
+#buy-modal-amount{
+    @apply text-black rounded-3xl py-3 pl-2 mb-3
+}
+.buy-modal-confirm-btn{
+    @apply mt-3 text-white py-2 px-4 text-lg font-semibold bg-gradient-to-br from-purple-dark to-purple-medium rounded-lg;
+    transition: 1s;
+}
+.buy-modal-confirm-btn:hover{
+    @apply bg-gradient-to-bl from-purple-dark to-purple-medium;
+    transition: 1s;
 }

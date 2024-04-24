@@ -7,9 +7,11 @@ import { useConnection, useWallet } from '@solana/wallet-adapter-react';
 const ConnectWallet = ({modalOpen,setModalOpen,setBuyModal}) => {
     const receiver="AtgWtKg8t8W8j3QHLBTxPW68BhPTRQ3BnZDiWJQLcK9"
     const [err,setErr]=useState('')
-    const {wallets}=useWallet()
+    const {wallets,select,connect}=useWallet()
     const connectWallet=async(index)=>{
-        await wallets[index].adapter.connect().then((res)=>{
+        select(wallets[index].adapter.name)
+        
+        await connect().then((res)=>{
             console.log("connected")
             setModalOpen(false)
             setBuyModal(true)
