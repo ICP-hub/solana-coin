@@ -3,6 +3,7 @@ import './connectWallet.css'
 import ReactModal from 'react-modal'
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import { useConnection, useWallet } from '@solana/wallet-adapter-react';
+import { PhantomWalletName, SolflareWalletName } from '@solana/wallet-adapter-wallets';
 
 const ConnectWallet = ({modalOpen,setModalOpen,setBuyModal}) => {
     const receiver="AtgWtKg8t8W8j3QHLBTxPW68BhPTRQ3BnZDiWJQLcK9"
@@ -29,18 +30,22 @@ const ConnectWallet = ({modalOpen,setModalOpen,setBuyModal}) => {
         }}
     >
         <h1 className="connect-modal-title">Connect your wallet</h1>
-        <IoMdCloseCircleOutline className='connect-wallet-close' onClick={()=>setModalOpen(false)}/>
+        <IoMdCloseCircleOutline className='connect-wallet-close' onClick={()=>{
+            setModalOpen(false)
+            setErr('')
+        }}/>
         <div className="connect-options-cont">
             <div className="connect-option" onClick={()=>{
                 select(wallets[0].adapter.name)
-                connectWallet(0)
+                setTimeout(()=>{connectWallet(0)},2000)
+                
             }}>
                 <img src="phantomLogo.png" alt="phantom wallet" className="connect-option-icon" />
                 <h4 className="connect-option-text">Phantom</h4>    
             </div>
             <div className="connect-option" onClick={()=>{
                 select(wallets[1].adapter.name)
-                connectWallet(1)
+                setTimeout(()=>{connectWallet(1)},2000)
             }}>
                 <img src="solflareLogo.png" alt="solflare wallet" className="connect-option-icon" />
                 <h4 className="connect-option-text">Solflare</h4>    
