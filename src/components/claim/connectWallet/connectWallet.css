@@ -1,5 +1,5 @@
 .connect-modal{
-    @apply w-1/4 bg-tBlack z-[60] absolute top-1/4 left-[37.5%] flex py-6 flex-col items-start pl-6 rounded-lg relative;
+    @apply w-1/4 bg-tBlack z-[60] absolute top-1/4 left-[37.5%] flex py-6 flex-col items-start pl-6 rounded-lg relative min-w-[450px];
 }
 .connect-modal-overlay{
     @apply bg-red-100 fixed 
@@ -11,7 +11,7 @@
     @apply flex flex-col w-[80%] items-start my-4 
 }
 .connect-option{
-    @apply px-4 py-2 flex justify-start rounded-lg bg-footerBG mb-3 w-2/3 cursor-pointer
+    @apply px-4 py-2 flex justify-start rounded-lg bg-tBlack mt-3 w-full cursor-pointer 
 }
 .connect-option-text{
     @apply text-lg font-bold text-white

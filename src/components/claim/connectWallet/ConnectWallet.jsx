@@ -3,14 +3,13 @@ import './connectWallet.css'
 import ReactModal from 'react-modal'
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import { useConnection, useWallet } from '@solana/wallet-adapter-react';
-import { PhantomWalletName, SolflareWalletName } from '@solana/wallet-adapter-wallets';
 
 const ConnectWallet = ({modalOpen,setModalOpen,setBuyModal}) => {
     const receiver="AtgWtKg8t8W8j3QHLBTxPW68BhPTRQ3BnZDiWJQLcK9"
     const [err,setErr]=useState('')
     const {wallets,select,connect}=useWallet()
     const connectWallet=async(index)=>{        
-        await connect().then((res)=>{
+        await wallets[index].adapter.connect().then((res)=>{
             console.log("connected")
             setModalOpen(false)
             setBuyModal(true)
@@ -26,7 +25,7 @@ const ConnectWallet = ({modalOpen,setModalOpen,setBuyModal}) => {
         className='connect-modal'
         ariaHideApp={false}
         style={{ 
-            overlay: { backdropFilter: 'blur(5px)' , zIndex:50, backgroundColor:'rbg(0,0,0,0%)'}, 
+            overlay: { backdropFilter: 'blur(20px)' , zIndex:50, backgroundColor:'rbg(0,0,0,0%)'}, 
         }}
     >
         <h1 className="connect-modal-title">Connect your wallet</h1>

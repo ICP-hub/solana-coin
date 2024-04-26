@@ -18,6 +18,7 @@ const HeroSec = ({nav}) => {
         </div>
         <img src="hero.png" alt="hero section dog ichuahua" className='hero-img'/>
       </div>
+      <div className="hero-img-grad"></div>
       <HeroStartBtn/>
     </div>
   )

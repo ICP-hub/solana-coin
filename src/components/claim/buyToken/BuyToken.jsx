@@ -9,9 +9,9 @@ import toast, { Toaster } from 'react-hot-toast'
 
 const BuyToken = ({buyModal,setBuyModal}) => {
     const receiver="AtgWtKg8t8W8j3QHLBTxPW68BhPTRQ3BnZDiWJQLcK9"
-    // const connection = new Connection(clusterApiUrl("devnet"))
+    const connection = new Connection(clusterApiUrl("devnet"))
     const { publicKey, sendTransaction,connected } = useWallet();
-    const {connection}=useConnection()
+    // const {connection}=useConnection()
     const [amount,setAmount]=useState(0)
     const [err,setErr]=useState("")
 
