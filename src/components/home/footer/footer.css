@@ -1,17 +1,17 @@
 .footer-sec{
-    @apply w-screen bg-footerBG flex flex-wrap justify-evenly pt-10 pb-14 pr-28 z-40 relative
+    @apply w-screen bg-footerBG flex flex-col sm:flex-row flex-wrap justify-evenly pt-10 pb-14 pr-28 z-40 relative border-t
 }
 .footer-about{
-    @apply w-1/4
+    @apply sm:w-1/4 
 }
 .footer-about-head{
-    @apply text-3xl text-white font-bold mb-3
+    @apply w-screen text-center sm:w-full sm:text-start text-3xl text-white font-bold mb-3
 }
 .footer-about-text{
-    @apply text-white text-base opacity-40 font-normal
+    @apply px-5 sm:px-0 text-white text-center sm:text-start text-base opacity-40 font-normal
 }
 .footer-column-cont{
-    @apply flex flex-wrap w-2/5 justify-between
+    @apply flex mt-12 sm:mt-0 px-6 sm:px-0 lg:flex-wrap  sm:w-2/5 sm:justify-between
 }
 .footer-col{
     @apply flex flex-col items-start mr-4

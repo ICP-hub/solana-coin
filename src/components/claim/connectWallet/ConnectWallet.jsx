@@ -28,6 +28,7 @@ const ConnectWallet = ({modalOpen,setModalOpen,setBuyModal}) => {
             overlay: { backdropFilter: 'blur(20px)' , zIndex:50, backgroundColor:'rbg(0,0,0,0%)'}, 
         }}
     >
+        <div className='flex flex-col items-center'> 
         <h1 className="connect-modal-title">Connect your wallet</h1>
         <IoMdCloseCircleOutline className='connect-wallet-close' onClick={()=>{
             setModalOpen(false)
@@ -49,13 +50,21 @@ const ConnectWallet = ({modalOpen,setModalOpen,setBuyModal}) => {
                 <img src="solflareLogo.png" alt="solflare wallet" className="connect-option-icon" />
                 <h4 className="connect-option-text">Solflare</h4>    
             </div>
-        </div>      
-        <p className="connect-modal-text text-red-700">
+        </div>  
+        <p className="connect-modal-text text-red-700 text-center">
             {err}
         </p>
-        <p className="connect-modal-text">
-            If you are unable to connect your wallet , just send your SOl to <p className='font-extrabold'>{receiver}</p>
-        </p>    
+
+        
+        <p className="connect-modal-text text-center ">
+            If you are unable to connect your wallet , just send your SOl to <p className='font-extrabold text-xs '>{receiver}</p>   
+        </p> 
+        
+        </div>
+
+       
+        
+        
     </ReactModal>
   )
 }

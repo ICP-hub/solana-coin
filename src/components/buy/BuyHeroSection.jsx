@@ -6,14 +6,19 @@ import BuyRotateBtn from './buyRotateBtn/BuyRotateBtn'
 const BuyHeroSection = () => {
   return (
     <div className='buy-hero-sec'>
-        <img src="shiba.png" alt="shiba inu holdinga coin" className="buy-img" />
+      <div className='shiba-cont'>
+      <BuyRotateBtn/>
+      <img src="shiba.png" alt="shiba inu holdinga coin" className="buy-img" />
+      </div>
+
         <BuyOptions/>
+        
         <div className="buy-bottom-text-cont">
           <p className="buy-bottom-text">
           ICHuaHua's Crypto Adventure: A Tale of Grit and Wit
           </p>
         </div>
-        <BuyRotateBtn/>
+        
     </div>
   )
 }

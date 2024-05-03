@@ -1,26 +1,26 @@
 .feature-sec{
-    @apply w-screen flex flex-col items-center bg-footerBG pt-10 pb-20
+    @apply w-screen flex flex-col items-center bg-footerBG pt-10 sm:pb-20
 }
 .feature-sec-text{
-    @apply text-white opacity-80 text-xl w-[65vw] text-center my-4
+    @apply text-white opacity-80 text-xl  w-[85vw] sm:w-[65vw] text-center my-4
 }
 .feature-card-cont{
-    @apply w-[60vw] flex flex-wrap justify-between my-14
+    @apply w-[90vw] sm:w-[80vw] xl:w-[60vw] flex flex-wrap justify-between my-14
 }
 
 /*Feature card styling*/
 
 .feature-card{
-    @apply  fill-transparent flex justify-center items-center w-[43%] h-[30vh] bg-gradient-to-r from-brown-light to-brown-dark rounded-2xl relative z-10 overflow-hidden min-w-[400px];
+    @apply mx-auto mb-10 lg:m-0 fill-transparent flex justify-center items-center w-[43%] h-[28vh] sm:h-[30vh] bg-gradient-to-r from-[#6033c4] to-[#6033c4] sm:from-brown-light sm:to-brown-dark rounded-2xl relative z-10 overflow-hidden min-w-[95%] sm:min-w-[400px] border;
 }
 .feature-card-text{
-    @apply text-white text-center text-4xl font-extrabold leading-[3rem] w-4/5 z-20 
+    @apply text-white text-center text-xl sm:text-4xl font-extrabold leading-[3rem] w-4/5 z-20 
 }
 .feature-card-text-short{
-    @apply text-white text-center text-4xl font-extrabold leading-[3rem] w-1/3 z-20
+    @apply text-white text-center text-xl sm:text-4xl font-extrabold leading-[3rem] w-1/3 z-20
 }
 .feature-card-cd{
-    @apply bg-brown-dark w-52 h-52 rounded-full absolute transition-transform; 
+    @apply bg-[#3f217e] sm:bg-brown-dark w-52 h-52 rounded-full absolute transition-transform; 
     transition:1s
 }
 .feature-card-cd-pos1{
@@ -30,7 +30,7 @@
     @apply top-[-3.5rem] right-[-30px];
 }
 .feature-card-cl{
-    @apply bg-brown-light w-36 h-36 rounded-full absolute;
+    @apply bg-[#9f83dc] sm:bg-brown-light w-36 h-36 rounded-full absolute;
     transition: 1s;
 }
 .feature-card-cl-pos1{
@@ -40,7 +40,7 @@
     @apply bottom-[-3.5rem] left-[-2rem];
 }
 .feature-card-data{
-    @apply text-xl font-normal text-white w-4/5 text-center z-30 ;
+    @apply sm:text-xl font-normal text-white w-4/5 text-center z-30 ;
 }
 
 /* animations */

@@ -1,11 +1,12 @@
+
 .buy-rotate-btn-cont{
-    @apply absolute top-[-0.6rem] left-56 z-10;
+    @apply absolute -z-[1]  lg:top-[-5%] lg:left-[12%];
 }
 .buy-circle-text{
     @apply text-white
 }
 .buy-rotate-btn{
-    @apply text-white font-bold text-4xl absolute top-[40%] left-[32%]
+    @apply text-white font-bold text-4xl absolute top-[40%] left-[20%]
 }
 .rotate{
     animation: rotate 6s linear infinite;

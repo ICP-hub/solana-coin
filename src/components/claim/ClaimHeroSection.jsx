@@ -12,7 +12,11 @@ const ClaimHeroSection = () => {
   const [buyModal,setBuyModal]=useState(false)
   return (
     <div className='claim-hero-sec'>
-        <img src="shiba.png" alt="shiba inu holdinga coin" className="claim-img" />
+      <div className='shiba-cont'>
+      <CLaimRotateBtn/>
+      <img src="shiba.png" alt="shiba inu holdinga coin" className="claim-img " />
+      </div>
+        
         <ClaimInstructions setModalOpen={setModalOpen}/>
         {/* <Gradients/> */}
         <div className="claim-bottom-text-cont">
@@ -20,7 +24,7 @@ const ClaimHeroSection = () => {
           ICHuaHua's Crypto Adventure: A Tale of Grit and Wit
           </p>
         </div>
-        <CLaimRotateBtn/>
+       
         <ConnectWallet modalOpen={modalOpen} setModalOpen={setModalOpen} setBuyModal={setBuyModal}/>
         <BuyToken buyModal={buyModal} setBuyModal={setBuyModal}/>
         <Toaster/>

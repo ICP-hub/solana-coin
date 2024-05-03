@@ -4,7 +4,7 @@ const RoadmapCard = ({text, subtext, data}) => {
   const [mouseIn,setMouseIn]=useState(false)
   return (
     <div 
-      className='roadmap-card' 
+      className='roadmap-card ' 
       onMouseEnter={()=>setMouseIn(true)} 
       onMouseLeave={()=>setMouseIn(false)}
     >
@@ -14,7 +14,7 @@ const RoadmapCard = ({text, subtext, data}) => {
         <div className="roadmap-card-text2">
           {text}
         </div>
-        <div className="roadmap-card-data">
+        <div className="roadmap-card-data no-scrollbar">
           {data}
         </div>
         </>
