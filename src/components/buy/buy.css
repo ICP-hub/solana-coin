@@ -1,3 +1,4 @@
+/*
 .buy-hero-sec{
     @apply w-full flex justify-around items-start bg-footerBG relative pt-10 pb-0 overflow-x-hidden
 }
@@ -9,4 +10,31 @@
 }
 .buy-bottom-text{
     @apply text-white text-2xl font-semibold py-4 mr-[20%] z-0
+}
+*/
+
+
+.buy-hero-sec{
+    @apply w-screen flex flex-wrap-reverse xl:flex-wrap justify-around items-start bg-footerBG relative pt-10 pb-0  
+}
+.shiba-cont{
+@apply z-[11] mt-16 xl:m-0 -mb-14
+}
+.buy-img{
+    @apply w-[30%] z-[11] mx-auto lg:mx-0 mt-6 lg:mt-0 min-w-[360px] sm:min-w-[420px] lg:min-w-[500px] xl:min-w-[560px] 
+}
+.buy-bottom-text-cont{
+    @apply flex  justify-end absolute bottom-0 w-full bg-gradient-to-r from-white via-tWhite to-transparent z-10
+}
+.buy-bottom-text{
+    @apply text-white mx-auto lg:mx-0 text-sm sm:text-xl lg:text-2xl font-semibold py-4 lg:mr-[20%] z-0
+}
+
+@media screen and (max-width: 1700px) {
+    .buy-hero-sec{
+        @apply pb-20
+    }
+    /* .claim-bottom-text-cont{
+        @apply hidden
+    } */
 }

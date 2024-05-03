@@ -1,5 +1,5 @@
 .navbar{
-    @apply mt-10 w-screen flex justify-around items-center bg-footerBG pt-10 pb-20 
+    @apply mt-6 sm:mt-10 px-6  w-screen flex justify-between sm:justify-around items-center bg-footerBG sm:pt-10 pb-20 
 }
 .nav-title-cont{
     @apply flex justify-start
@@ -9,12 +9,13 @@
     animation: flicker 0.5s ;
 } */
 .nav-title{
-    @apply text-3xl text-white font-bold overflow-hidden z-10;
+    @apply text-xl sm:text-3xl text-white font-bold overflow-hidden z-10;
     animation: typing 5s steps(7, end);
 }
-.nav-link-cont{
-    @apply w-1/4 flex justify-between min-w-[400px]
+.nav-link-cont {
+    @apply hidden sm:w-1/4 sm:flex sm:justify-between sm:min-w-[360px] lg:min-w-[400px];
 }
+
 .nav-link{
     @apply text-white text-lg cursor-pointer;
     transition: 1s;
@@ -23,7 +24,7 @@
     @apply -translate-y-2
 }
 .nav-claim-btn{
-    @apply rounded-xl text-white text-base font-semibold bg-gradient-to-br from-purple-medium to-purple-dark py-3 px-11 z-10
+    @apply rounded-xl text-white text-base font-semibold bg-gradient-to-br from-purple-medium to-purple-dark py-3 px-9 sm:px-11 z-10
 }
 .nav-claim-btn:hover{
     @apply rounded-xl text-white text-base font-semibold bg-gradient-to-br from-purple-dark to-purple-medium py-3 px-11 shadow-md shadow-purple-900

@@ -4,7 +4,7 @@ import HeroStartBtn from './HeroStartBtn'
 
 const HeroSec = ({nav}) => {
   return (
-    <div className="hotel-sec">
+    <div className="hero-sec">
       <div className='hero-sec-main'>
         <div className="hero-data-cont">
           <div className="hero-data-heading-cont">
@@ -16,7 +16,9 @@ const HeroSec = ({nav}) => {
             <button className="hero-data-btn" onClick={()=>nav('/buy')}>BUY</button>
           </div>
         </div>
+        <div className='hero-cont'>
         <img src="hero.png" alt="hero section dog ichuahua" className='hero-img'/>
+        </div>
       </div>
       <div className="hero-img-grad"></div>
       <HeroStartBtn/>
