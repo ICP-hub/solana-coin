@@ -3,6 +3,7 @@ import './connectWallet.css'
 import ReactModal from 'react-modal'
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import { useConnection, useWallet } from '@solana/wallet-adapter-react';
+import { } from '@solana/wallet-adapter-react-ui'
 
 const ConnectWallet = ({modalOpen,setModalOpen,setBuyModal}) => {
     const receiver="AtgWtKg8t8W8j3QHLBTxPW68BhPTRQ3BnZDiWJQLcK9"
