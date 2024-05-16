@@ -5,7 +5,7 @@
     @apply w-[70vw] flex justify-between items-center my-16
 }
 .token-chart{
-    @apply w-1/3
+    @apply w-1/3  relative
 }
 .token-chart-text-cont{
     @apply w-[43%] h-[28vh] flex flex-col justify-center border-red-100 rounded-xl  px-10;
@@ -22,7 +22,7 @@
 /* different hover appear cards */
 
 .token-chart-text-cont2{
-    @apply w-[43%] h-[28vh] flex flex-col justify-center border-white rounded-xl  pl-5 ;
+    @apply w-[43%] h-[32vh] flex flex-col justify-center border-white rounded-xl  pl-5 pt-5;
     border-width: 1px;
     transition: 1s;
 }
