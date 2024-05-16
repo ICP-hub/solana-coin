@@ -13,6 +13,9 @@
 .claim-bottom-text{
     @apply text-white mx-auto lg:mx-0 text-sm sm:text-xl lg:text-2xl font-semibold py-4 lg:mr-[20%] z-0
 }
+.loader{
+    @apply absolute left-auto right-auto z-[100]
+}
 
 @media screen and (max-width: 1700px) {
     .claim-hero-sec{

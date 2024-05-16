@@ -1,21 +1,63 @@
 import React, { useCallback, useState } from 'react'
 import './buyToken.css'
 import ReactModal from 'react-modal'
-import { Connection, LAMPORTS_PER_SOL, PublicKey, SystemProgram, Transaction, clusterApiUrl } from '@solana/web3.js'
+import { Connection, Keypair, LAMPORTS_PER_SOL, PublicKey, SystemProgram, Transaction, clusterApiUrl } from '@solana/web3.js'
 import { useConnection, useWallet } from '@solana/wallet-adapter-react'
 import { WalletNotConnectedError } from '@solana/wallet-adapter-base'
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import toast, { Toaster } from 'react-hot-toast'
+import { getOrCreateAssociatedTokenAccount, mintTo } from '@solana/spl-token'
+import { secret_key } from '../../../../secret'
 
-const BuyToken = ({buyModal,setBuyModal}) => {
-    const receiver="AtgWtKg8t8W8j3QHLBTxPW68BhPTRQ3BnZDiWJQLcK9"
+const BuyToken = ({buyModal,setBuyModal,loading,setLoading}) => {
+    const receiver=import.meta.env.VITE_RECEIVER_WALLET_ADDRESS
     // const connection = new Connection(clusterApiUrl("devnet"))
     const { publicKey, sendTransaction,connected } = useWallet();
     const {connection}=useConnection()
     const [amount,setAmount]=useState(0)
     const [err,setErr]=useState("")
 
+    async function mintNewTokens(amount){
+        try {
+            // console.log(import.meta.env.VITE_MINTING_AUTHORITY_KEY)
+            // setLoading(true)
+            let secret=secret_key
+            console.log(secret)
+            const fromWallet=Keypair.fromSecretKey(
+                Uint8Array.from(secret)
+            )
+            const mintPublicKey=new PublicKey(import.meta.env.VITE_TOKEN_ID)
+            const toPublicKey=new PublicKey(receiver)
+            const toTokenAccount = await getOrCreateAssociatedTokenAccount(
+                connection,
+                fromWallet,
+                mintPublicKey,
+                toPublicKey
+              );
+              
+              const signature = await mintTo(
+                connection,
+                fromWallet,
+                mintPublicKey,
+                toTokenAccount.address,
+                fromWallet.publicKey,
+                10000*amount
+              );
+              console.log(`Mint signature ${signature}`);
+              setLoading(false)
+              alert(`Minting successful, check the transaction on Solana explorer : \n${signature}`)
+
+
+        } catch (error) {
+            console.log(error)
+            alert(error)
+            setLoading(false)
+        }
+        
+    }
+
     const buy=useCallback(async()=>{
+        setLoading(true)
         console.log(connection)
         console.log(publicKey,connected)
         try{
@@ -33,21 +75,30 @@ const BuyToken = ({buyModal,setBuyModal}) => {
                 lamports: lamportsI,
             })
         );
+        let latestBlockHash=await connection.getLatestBlockhash()
 
         const signature = await sendTransaction(transaction, connection);
 
-        await connection.confirmTransaction(signature, 'processed').then((res)=>{
-            console.log(res)
-            setBuyModal(false)
-            toast.success('Successfully transferred, you will receive your tokens shortly')
-            // await 
+        await connection.confirmTransaction(
+              {
+                blockhash:latestBlockHash.blockhash,
+                lastValidBlockHeight:latestBlockHash.lastValidBlockHeight,
+                signature
+              }
+            ).then((res)=>{
+                console.log(res)
+                setBuyModal(false)
+                toast.success('Successfully transferred SOL, you will receive your tokens shortly')
+                mintNewTokens(amount)
         }).catch((err)=>{
             console.log(err)
-            setErr(err)
+            alert(err)
+            setLoading(false)
         })
     }catch(e){
         console.log(e)
-        setErr('SOmething went wrong while sending transaction!')
+        setErr('Something went wrong while sending transaction!')
+        setLoading(false)
     }
     },[connection,publicKey,sendTransaction])
 
@@ -74,7 +125,7 @@ const BuyToken = ({buyModal,setBuyModal}) => {
             // value={amount}
         />
         <p className="but-modal-text text-red-700">
-            {err}
+            {err.toString()}
         </p>
         <button className='buy-modal-confirm-btn' onClick={buy}>Confirm transaction</button>
         <p className="buy-modal-text">

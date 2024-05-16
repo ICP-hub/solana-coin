@@ -7,11 +7,14 @@ import BuyToken from './buyToken/BuyToken'
 import { Toaster } from 'react-hot-toast'
 
 
+
 const ClaimHeroSection = () => {
   const [modalOpen,setModalOpen]=useState(false)
   const [buyModal,setBuyModal]=useState(false)
+  const [loading,setLoading]=useState(false)
   return (
     <div className='claim-hero-sec'>
+      <img src="Spinner2.gif" alt="loader" className='loader' style={{display:(loading)?'block':'none'}}/>
       <div className='shiba-cont'>
       <CLaimRotateBtn/>
       <img src="shiba.png" alt="shiba inu holdinga coin" className="claim-img " />
@@ -26,7 +29,7 @@ const ClaimHeroSection = () => {
         </div>
        
         <ConnectWallet modalOpen={modalOpen} setModalOpen={setModalOpen} setBuyModal={setBuyModal}/>
-        <BuyToken buyModal={buyModal} setBuyModal={setBuyModal}/>
+        <BuyToken buyModal={buyModal} setBuyModal={setBuyModal} loading={loading} setLoading={setLoading}/>
         <Toaster/>
     </div>
   )
