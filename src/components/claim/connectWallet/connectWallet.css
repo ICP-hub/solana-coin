@@ -1,11 +1,11 @@
 .connect-modal{
-    @apply w-1/4 bg-tBlack z-[60] absolute top-1/4 left-[37.5%] flex py-6 flex-col items-start pl-6 rounded-lg relative min-w-[450px];
+    @apply w-1/4 bg-tBlack z-[60] mx-auto lg:mx-0 top-1/4 lg:top-1/4 lg:left-[37.5%] flex py-8 flex-col items-start  lg:px-6 rounded-lg relative min-w-[380px] lg:min-w-[450px];
 }
 .connect-modal-overlay{
     @apply bg-red-100 fixed 
 }
 .connect-modal-title{
-    @apply text-white text-4xl font-semibold mb-4
+    @apply text-white text-3xl lg:text-4xl font-semibold mb-4
 }
 .connect-options-cont{
     @apply flex flex-col w-[80%] items-start my-4 
@@ -20,7 +20,7 @@
     @apply w-8 h-8 rounded-full mr-2 object-contain
 }
 .connect-modal-text{
-    @apply text-sm text-white font-medium my-6 text-center
+    @apply text-sm px-2 text-white font-medium my-6 lg:text-center w-full 
 }
 .connect-wallet-close{
     @apply text-white text-5xl absolute -right-3 -top-3 cursor-pointer

@@ -1,5 +1,5 @@
 .claim-rotate-btn-cont{
-    @apply absolute top-[-5%] left-[12%];
+    @apply absolute -z-[1]  lg:top-[-5%] lg:left-[12%];
 }
 .claim-circle-text{
     @apply text-white

@@ -2,9 +2,9 @@
     @apply w-screen flex flex-col items-center m-0
 }
 .sec-title-text{
-    @apply text-white font-extrabold my-0 p-0 align-text-top;
-    font-size: 5rem;
+    @apply text-white text-[2rem] md:text-[3rem] lg:text-[5rem]  font-extrabold my-0 p-0 align-text-top;
+   
 }
 .sec-title-line{
-    @apply w-1/4 bg-purple-line h-0.5 relative min-w-80
+    @apply w-1/4 bg-purple-line h-0.5 relative min-w-36 sm:min-w-80
 }
