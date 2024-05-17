@@ -81,7 +81,7 @@ const Tokenomics = () => {
       <div className="token-chart-cont">
         <div className="token-chart">
           <PieChart
-          className=" overflow-visible"
+          className="overflow-visible transition-all ease-out "
             data={pieChartData}
             segmentsStyle={(index) => ({
               cursor: "pointer",
@@ -94,19 +94,20 @@ const Tokenomics = () => {
             lineWidth={40}
             // Adding custom center text
             label={({ dataEntry }) =>
-              tokenText !== 0 ? dataEntry.title : null
+              tokenText !== 0 ?  dataEntry.title  : null
             }
             labelStyle={{
               fontSize: "5px",
               fill: "#fff",
+              pointerEvents:"none"
             }}
             labelPosition={80}
           />
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
-              pointer-events-none text-white text-sm flex flex-col items-center "
+              pointer-events-none text-white flex flex-col items-center text-center "
           >
-            <h1 className="text-4xl">100%</h1>
-            <h2 className="text-3xl">Total Supply</h2>
+            <h1 className="text-xs md:text-xl lg:text-3xl">100%</h1>
+            <h2 className="text-xs md:text-lg lg:text-2xl">Total Supply</h2>
           </div>
         </div>
         {tokenText > 0 ? (
@@ -130,7 +131,7 @@ const Tokenomics = () => {
             </p>
           </div>
         ) : (
-          <div className="token-chart-text-cont">
+          <div className="token-chart-text-cont ">
             <p className="token-chart-text">The Blueprint of Success</p>
           </div>
         )}

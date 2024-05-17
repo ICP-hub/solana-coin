@@ -2,10 +2,10 @@
     @apply lg:mr-[10%] w-[80vw] lg:w-[32%]  border-white border-[0.5px] rounded-2xl flex flex-col items-center bg-gradient-to-r from-tWhite to-tBlack
 }
 .buy-title{
-    @apply mt-5 text-2xl lg:text-3xl xl:text-4xl text-white font-extrabold
+    @apply mt-5 text-2xl lg:text-3xl xl:text-4xl text-white font-extrabold mx-4 text-center
 }
 .buy-title-light{
-    @apply text-2xl lg:text-3xl xl:text-4xl text-white font-extralight my-3 lg:my-6
+    @apply text-2xl lg:text-3xl xl:text-4xl text-white font-extralight my-3 lg:my-6 mx-4 text-center
 }
 .buy-btn-cont{
     @apply grid grid-cols-3 lg:grid-cols-100 w-[90%] gap-3 lg:gap-5 my-10  mt-24 lg:mt-10

@@ -1,14 +1,14 @@
 .claim-ins-cont{
-    @apply  min-w-[320px]  sm:min-w-[400px] mx-auto sm:mx-0 xl:mr-[10%] w-[28%] py-8  border-white border-[0.5px] rounded-2xl flex flex-col items-center bg-gradient-to-r from-tWhite to-tBlack
+    @apply  min-w-[320px]  sm:min-w-[400px] mx-auto sm:mx-0 xl:mr-[10%] w-[28%] py-8  border-white border-[0.5px] rounded-2xl flex flex-col items-center bg-gradient-to-r from-tWhite to-tBlack 
 }
 .claim-head-cont{
     @apply w-[90%] flex justify-between flex-wrap
 }
 .claim-title{
-    @apply text-2xl lg:text-4xl text-white font-extrabold
+    @apply text-2xl lg:text-3xl 2xl:text-4xl text-white font-extrabold pr-4
 }
 .claim-title2{
-    @apply text-2xl lg:text-4xl text-white font-extralight
+    @apply text-2xl lg:text-3xl 2xl:text-4xl text-white font-extralight 
 }
 .claim-small-text-cont{
     @apply w-[90%] flex justify-between my-8 items-end
