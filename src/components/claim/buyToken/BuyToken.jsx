@@ -7,7 +7,7 @@ import { WalletNotConnectedError } from '@solana/wallet-adapter-base'
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import toast, { Toaster } from 'react-hot-toast'
 import { getOrCreateAssociatedTokenAccount, mintTo } from '@solana/spl-token'
-import { secret_key } from '../../../../secret'
+// import { secret_key } from '../../../../secret'
 
 const BuyToken = ({buyModal,setBuyModal,loading,setLoading}) => {
     const receiver=import.meta.env.VITE_RECEIVER_WALLET_ADDRESS

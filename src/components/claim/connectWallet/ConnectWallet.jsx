@@ -57,8 +57,8 @@ const ConnectWallet = ({modalOpen,setModalOpen,setBuyModal}) => {
         </p>
 
         
-        <p className="connect-modal-text text-center ">
-            If you are unable to connect your wallet , just send your SOl to <p className='font-extrabold text-xs '>{receiver}</p>   
+        <p className="connect-modal-text text-center  text-wrap ">
+            If you are unable to connect your wallet , just send your SOl to <p className='font-extrabold text-xs text-wrap '>{receiver}</p>   
         </p> 
         
         </div>

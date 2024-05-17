@@ -8,17 +8,17 @@
     @apply text-white opacity-80 text-xl text-center
 }
 .roadmap-card-cont{
-    @apply flex flex-col sm:flex-row w-3/5 justify-between items-center mt-8 mb-20 relative
+    @apply flex flex-col md:flex-row md:w-4/5 xl:w-4/5 justify-between items-center mt-8 mb-20 relative
 }
 .roadmap-img {
-    @apply w-[30vw] h-[32vw] sm:w-[15vw] sm:h-[15vw] absolute left-1/2 transform -translate-x-1/2 top-[42%] transform -translate-y-1/2 z-40;
+    @apply w-[30vw] h-[32vw] md:w-[16vw] md:h-[16vw] lg:w-[18vw] lg:h-[18vw] absolute left-1/2 transform -translate-x-1/2 top-[42%] md:top-[70%] transform -translate-y-1/2 z-40;
 }
 
 
 /* node tree styling */
 
 .roadmap-line-cont{
-    @apply hidden sm:inline-flex items-center justify-start w-[42%]
+    @apply hidden md:inline-flex items-center justify-start w-[42%]
 }
 .roadmap-line{
     @apply h-[1px] w-[47%] bg-purple-line 
@@ -40,7 +40,7 @@
 /* roadmap card styling */
 
 .roadmap-card{
-    @apply  w-[70vw]  h-[70vw] sm:w-[30vw] sm:h-[30vw] lg:w-[19vw] lg:h-[19vw] sm:mx-4 lg:mx-0 mb-16 sm:my-0  bg-blue-normalBG rounded-xl flex flex-col items-center justify-center z-10 relative overflow-hidden border;
+    @apply  w-[60vw] h-[60vw] sm:w-[50] sm:h-[50] md:w-[30vw] md:h-[28vw] xl:w-[25vw] xl:h-[25vw]  sm:mx-4 xl:mx-auto mb-16 md:my-0  bg-blue-normalBG rounded-xl flex flex-col items-center justify-center z-10 relative overflow-hidden border;
     transition: 1s ease-in-out;
 }
 .roadmap-card:hover{
@@ -51,7 +51,7 @@
     @apply text-white text-2xl lg:text-5xl font-extrabold text-center z-30;
 }
 .roadmap-card-text2{
-    @apply text-white  text-2xl lg:text-5xl font-extrabold text-center z-30 -scale-x-100;
+    @apply text-white  text-2xl lg:text-5xl font-extrabold text-center z-30 -scale-x-100 my-2;
 
 }
 .roadmap-card-data{

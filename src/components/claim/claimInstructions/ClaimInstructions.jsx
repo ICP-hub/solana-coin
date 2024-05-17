@@ -3,7 +3,7 @@ import './claimInstructions.css'
 
 const ClaimInstructions = ({setModalOpen}) => {
   return (
-    <div className='claim-ins-cont'>
+    <div className='claim-ins-cont '>
         <div className="claim-head-cont">
             <h1 className="claim-title">Connect Wallet</h1>
             <h2 className="claim-title2">Claim</h2>

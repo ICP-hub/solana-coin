@@ -16,12 +16,12 @@ const featureList=[
 
 const Features = () => {
   return (
-    <div className='feature-sec' id='features'>
+    <div className='feature-sec ' id='features'>
       <Title title={"KEY FEATURES"}/>
       <p className="feature-sec-text">
       Small, But Mighty- Straight Talk: No Tricks, Just Treats
       </p>
-      <div className="feature-card-cont">
+      <div className="feature-card-cont ">
         {
           featureList.map((feature)=>(
             <FeatureCard text={feature.text} data={feature.data}/>

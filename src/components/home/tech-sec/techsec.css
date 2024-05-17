@@ -1,6 +1,6 @@
 .tech-sec{
-    @apply w-screen flex flex-col items-center bg-footerBG sm:pt-10 sm:pb-20
+    @apply w-screen flex flex-col items-center bg-footerBG sm:pt-0 sm:pb-20
 }
 .tech-sec-text{
-    @apply text-white opacity-80 sm:text-xl w-[90vw] sm:w-[50vw] text-center my-4
+    @apply text-white opacity-80 sm:text-xl w-[90vw] sm:w-[80vw] xl:w-[50vw] text-center my-4
 }

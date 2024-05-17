@@ -6,5 +6,5 @@
    
 }
 .sec-title-line{
-    @apply w-1/4 bg-purple-line h-0.5 relative min-w-36 sm:min-w-80
+    @apply w-1/4 2xl:w-1/5 bg-purple-line h-0.5 relative min-w-36 lg:min-w-96 
 }
