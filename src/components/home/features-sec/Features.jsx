@@ -6,11 +6,11 @@ import FeatureCard from './FeatureCard'
 const featureList=[
   {
     text:"NoTaxes, NoBullshit",
-    data:"ICHuaHua is all about keeping it simple and straightforward.  No hidden fees, no sneaky taxes. Just like throwing a ball and chasing it, $ICHUA is  simple and fun."
+    data:"SOLHuaHua is all about keeping it simple and straightforward.  No hidden fees, no sneaky taxes. Just like throwing a ball and chasing it, $SOLHuaHua is  simple and fun."
   },
   {
     text:"Community-Driven Meme Power- By the Pack, For the Pack",
-    data:"This ain't just our  coin; it's yours. $ICHUA thrives on community vibes. This is a coin for the people,  powered by the people."
+    data:"This ain't just our  coin; it's yours. $SOLHuaHua thrives on community vibes. This is a coin for the people,  powered by the people."
   }
 ]
 

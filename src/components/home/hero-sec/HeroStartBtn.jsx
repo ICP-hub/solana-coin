@@ -7,7 +7,7 @@ const HeroStartBtn = () => {
   return (
     <div className='hero-start-div'>
         <p className="hero-start-text">
-            ICHuaHua's Crypto Adventure: A Tale of Grit and Wit
+            SOLHuaHua's Crypto Adventure: A Tale of Grit and Wit
         </p>
         <div className={hover?"hero-start-btn-cont rotate":"hero-start-btn-cont"} onMouseEnter={()=>setHover(true)} onMouseLeave={()=>setHover(false)}>
             <ReactCurvedText

@@ -6,7 +6,7 @@
     @apply text-white
 }
 .buy-rotate-btn{
-    @apply text-white font-bold text-4xl absolute top-[40%] left-[20%]
+    @apply text-white font-bold text-4xl absolute top-[40%] left-[32%]
 }
 .rotate{
     animation: rotate 6s linear infinite;

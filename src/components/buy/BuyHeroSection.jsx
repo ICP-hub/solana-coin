@@ -8,14 +8,14 @@ const BuyHeroSection = () => {
     <div className='buy-hero-sec'>
       <div className='shiba-cont'>
       <BuyRotateBtn/>
-      <img src="shiba.png" alt="shiba inu holdinga coin" className="buy-img" />
+      <img src="shiba3.png" alt="shiba inu holdinga coin" className="buy-img" />
       </div>
 
         <BuyOptions/>
         
         <div className="buy-bottom-text-cont">
           <p className="buy-bottom-text">
-          ICHuaHua's Crypto Adventure: A Tale of Grit and Wit
+          SOLHuaHua's Crypto Adventure: A Tale of Grit and Wit
           </p>
         </div>
         

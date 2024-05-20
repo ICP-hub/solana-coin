@@ -17,14 +17,14 @@ const ClaimHeroSection = () => {
       <img src="Spinner2.gif" alt="loader" className='loader' style={{display:(loading)?'block':'none'}}/>
       <div className='shiba-cont'>
       <CLaimRotateBtn/>
-      <img src="shiba.png" alt="shiba inu holdinga coin" className="claim-img " />
+      <img src="shiba3.png" alt="shiba inu holdinga coin" className="claim-img " />
       </div>
         
         <ClaimInstructions setModalOpen={setModalOpen}/>
         {/* <Gradients/> */}
         <div className="claim-bottom-text-cont">
           <p className="claim-bottom-text">
-          ICHuaHua's Crypto Adventure: A Tale of Grit and Wit
+          SOLHuaHua's Crypto Adventure: A Tale of Grit and Wit
           </p>
         </div>
        

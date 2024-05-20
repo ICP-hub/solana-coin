@@ -3,7 +3,7 @@ import './footer.css'
 
 const footerData={
   about:{
-    title: "ICHuaHua",
+    title: "SOLHuaHua",
     text:"Lorem ipsum dolor sit amet consectetur. Dictum eu mattis lectus imperdiet id iaculis. In morbi bibendum egestas etiam a. Risus sagittis diam id ac. Vivamus augue turpis velit eros."
   },
   columns:[
@@ -13,7 +13,7 @@ const footerData={
     },
     {
       title:"Sitemap",
-      links:["So Home","What is ICHuaHua?","Much Wallets","Very Community","So Dogepedia"]
+      links:["So Home","What is SOLHuaHua?","Much Wallets","Very Community","So Dogepedia"]
     },
     {
       title:"Sitemap",

@@ -5,7 +5,7 @@ const Navbar = ({nav}) => {
   return (
     <div className='navbar'>
       <div className="nav-title-cont">
-        <h1 className="nav-title" onClick={()=>nav('/')} >ICHuaHua</h1>
+        <h1 className="nav-title" onClick={()=>nav('/')} >SOLHuaHua</h1>
         <div className="nav-cursor"/>
       </div>      
       <div className="nav-link-cont">

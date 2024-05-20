@@ -7,12 +7,12 @@ import RoadmapCard from './RoadmapCard'
 const roadmapList=[
   {
     title:"Q1 2024",
-    data:"The future is unwritten, and the path uncharted. With the  community at the helm, $ICHUA is poised for a journey of spontaneous adventures,  boundless possibilities, and meme magic."
+    data:"The future is unwritten, and the path uncharted. With the  community at the helm, $SOLHuaHua is poised for a journey of spontaneous adventures,  boundless possibilities, and meme magic."
   },
   {
     title:"Q2 2024",
     subtext:"& Beyond",
-    data:"Thegenesis of $ICHUA- Smart contract deployment, website launch, and  the building of a social media empire."
+    data:"Thegenesis of $SOLHuahua- Smart contract deployment, website launch, and  the building of a social media empire."
   }
 ]
 
@@ -42,7 +42,7 @@ const RoadMap = () => {
       <div className="roadmap-card-cont">
         <RoadmapCard text={roadmapList[0].title} data={roadmapList[0].data}/>
         <RoadmapCard text={roadmapList[1].title} subtext={roadmapList[1].subtext} data={roadmapList[1].data}/>
-        <img src="roadmap.png" alt="dog playing with token" className="roadmap-img" />
+        <img src="roadmap2.png" alt="dog playing with token" className="roadmap-img" />
       </div>
     </div>
   )

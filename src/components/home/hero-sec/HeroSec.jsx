@@ -17,7 +17,7 @@ const HeroSec = ({nav}) => {
           </div>
         </div>
         <div className='hero-cont'>
-        <img src="hero.png" alt="hero section dog ichuahua" className='hero-img'/>
+        <img src="hero2.png" alt="hero section dog solhuahua" className='hero-img'/>
         </div>
       </div>
       <div className="hero-img-grad"></div>
