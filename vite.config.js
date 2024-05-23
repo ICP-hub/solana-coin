@@ -4,6 +4,11 @@ import { NodeGlobalsPolyfillPlugin } from '@esbuild-plugins/node-globals-polyfil
 
 // https://vitejs.dev/config/
 export default defineConfig({
+    resolve: {
+        alias: {
+          crypto: 'crypto-browserify',
+        },
+      },  
   plugins: [react()],
   define: {
     'process.env.RECEIVER_WALLET_ADDRESS': `"${process.env.RECEIVER_WALLET_ADDRESS}"`
