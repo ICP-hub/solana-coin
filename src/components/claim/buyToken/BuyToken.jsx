@@ -7,7 +7,7 @@ import { WalletNotConnectedError } from '@solana/wallet-adapter-base'
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import toast, { Toaster } from 'react-hot-toast'
 import { getOrCreateAssociatedTokenAccount, mintTo } from '@solana/spl-token'
-// import { secret_key } from '../../../../secret'
+import { secret_key } from '../../../../secret'
 
 const BuyToken = ({buyModal,setBuyModal,loading,setLoading}) => {
     const receiver=import.meta.env.VITE_RECEIVER_WALLET_ADDRESS
@@ -16,6 +16,7 @@ const BuyToken = ({buyModal,setBuyModal,loading,setLoading}) => {
     const {connection}=useConnection()
     const [amount,setAmount]=useState(0)
     const [err,setErr]=useState("")
+    const token_decimals=1000000000
 
     async function mintNewTokens(amount){
         try {
@@ -41,7 +42,7 @@ const BuyToken = ({buyModal,setBuyModal,loading,setLoading}) => {
                 mintPublicKey,
                 toTokenAccount.address,
                 fromWallet.publicKey,
-                10000*amount
+                10000*amount*token_decimals
               );
               console.log(`Mint signature ${signature}`);
               setLoading(false)
