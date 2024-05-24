@@ -9,7 +9,7 @@ export default defineConfig({
           crypto: 'crypto-browserify',
         },
       },  
-  plugins: [react()],
+  pludefineConfiggins: [react()],
   define: {
     'process.env.RECEIVER_WALLET_ADDRESS': `"${process.env.RECEIVER_WALLET_ADDRESS}"`
   },
@@ -26,5 +26,8 @@ export default defineConfig({
             })
         ]
     }
-}
+  },
+  server:{
+    port: 3002
+  }
 })
