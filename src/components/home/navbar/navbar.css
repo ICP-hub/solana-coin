@@ -9,7 +9,7 @@
     animation: flicker 0.5s ;
 } */
 .nav-title{
-    @apply text-xl  sm:text-2xl md:text-3xl text-white font-bold overflow-hidden z-10 cursor-pointer;
+    @apply text-xl  sm:text-2xl md:text-3xl lg:text-4xl text-white font-bold overflow-hidden z-10 cursor-pointer;
     animation: typing 5s steps(7, end);
 }
 .nav-link-cont {
