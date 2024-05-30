@@ -42,20 +42,22 @@
 .roadmap-card{
     @apply  w-[60vw] h-[60vw] sm:w-[50] sm:h-[50] md:w-[30vw] md:h-[28vw] xl:w-[25vw] xl:h-[25vw]  sm:mx-4 xl:mx-auto mb-16 md:my-0  bg-blue-normalBG rounded-xl flex flex-col items-center justify-center z-10 relative overflow-hidden border;
     transition: 1s ease-in-out;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
 }
 .roadmap-card:hover{
-    transform:rotateY(180deg);
+    transform:rotateY(360deg);
+
     @apply bg-purple-light
 }
 .roadmap-card-text{
     @apply text-white text-2xl lg:text-5xl font-extrabold text-center z-30;
 }
 .roadmap-card-text2{
-    @apply text-white  text-2xl lg:text-5xl font-extrabold text-center z-30 -scale-x-100 my-2;
-
+    @apply text-white  text-2xl lg:text-5xl font-extrabold text-center z-30 my-2 ;
 }
 .roadmap-card-data{
-    @apply text-white  overflow-x-auto lg:text-xl font-normal text-center z-30 w-10/12 mt-4 -scale-x-100
+    @apply text-white  overflow-x-auto lg:text-xl font-normal text-center z-30 w-10/12 mt-4 
 }
 .roadmap-card-subtext{
     @apply text-white text-xl lg:text-3xl font-extrabold text-center mt-2 z-30

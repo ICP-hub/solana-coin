@@ -109,7 +109,7 @@ const heroBuyNow = ({nav,loading,setLoading}) => {
 
   return (
     <div className='hero-buyNow-cont'>
-        <h1 className=' hero-BuyNow-heading'>Buy Now before launch!**</h1>
+        <h1 className=' hero-BuyNow-heading'>Claim Now before launch!**</h1>
 
         <h1 className='hero-BuyNow-heading2'> 1SOL = 10,000 $SOLhuahua</h1>
 
@@ -131,7 +131,7 @@ const heroBuyNow = ({nav,loading,setLoading}) => {
               // onClick={()=>nav('/buy')}
               onClick={()=>setModalOpen(true)}
             > 
-                Buy Now!* 
+                Claim Now!* 
             </button>
         </section>
         <div className=' hero-buyNow-Footer-cont '>
