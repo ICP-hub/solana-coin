@@ -118,8 +118,8 @@ const BuyToken = ({buyModal,setBuyModal,loading,setLoading}) => {
             setBuyModal(false)
             setErr('')
         }}/>
-        <h1 className="buy-modal-title">Buy ICHuaHua</h1>
-        <h3 className="buy-modal-title2">1 SOL = 10,000 IChuahua</h3>
+        <h1 className="buy-modal-title">Buy SOLHuaHua</h1>
+        <h3 className="buy-modal-title2">1 SOL = 10,000 SOLhuahua</h3>
         <input 
             type="text" 
             name="SOL input" 

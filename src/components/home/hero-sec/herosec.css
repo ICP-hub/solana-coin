@@ -10,7 +10,10 @@
 }
 
 .hero-buyNow-cont{
-    @apply   w-[288px]  bg-[#302943]   p-5 text-center mx-auto rounded-3xl border 
+    @apply   min-w-[288px] max-w-[400px] bg-[#302943] h-full   p-5 text-center mx-auto rounded-3xl border 
+}
+.loader{
+    @apply absolute left-auto right-auto z-[100]
 }
 
 .hero-BuyNow-heading{
@@ -28,8 +31,12 @@
     @apply text-3xl
 }
 
-.AirdropToken-Cont{
+/* .AirdropToken-Cont{
     @apply border rounded-lg p-2 my-3 text-right
+} */
+.sol-input{
+    @apply text-black rounded-3xl py-3 pl-2 mb-3 w-[80%]
+
 }
 
 
@@ -45,7 +52,7 @@
 }
 
 .hero-buyNow-Footer-cont{
-    @apply text-center text-sm mb-5
+    @apply text-center text-sm mb-5 w-[80%]
 }
 
 

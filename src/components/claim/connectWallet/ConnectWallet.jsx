@@ -12,8 +12,12 @@ const ConnectWallet = ({modalOpen,setModalOpen,setBuyModal}) => {
     const connectWallet=async(index)=>{        
         await wallets[index].adapter.connect().then((res)=>{
             console.log("connected")
+            // if(isHome){
+            //     buy()
+            // }
             setModalOpen(false)
             setBuyModal(true)
+            
         }).catch((e)=>{
             console.log(e)
             setErr(''+e)

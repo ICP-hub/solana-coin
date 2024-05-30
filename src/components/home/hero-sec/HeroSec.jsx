@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './herosec.css'
 import HeroStartBtn from './HeroStartBtn'
 import HeroBuyNow from './HeroBuyNow'
 
 const HeroSec = ({nav}) => {
+  const [loading,setLoading]=useState(false)
   return (
-    <div className="hero-sec">
+    <div className="hero-sec">              
+    <img src="Spinner2.gif" alt="loader" className='loader' style={{display:(loading)?'block':'none'}}/>
       <div className='hero-sec-main'>
       <div className=' hero-buyNow-mainCont'>
-        <HeroBuyNow nav={nav} />
+        <HeroBuyNow nav={nav} loading={loading} setLoading={setLoading}/>
       </div>
           
 
