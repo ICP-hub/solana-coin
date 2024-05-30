@@ -8,6 +8,7 @@ import { IoMdCloseCircleOutline } from "react-icons/io";
 import toast, { Toaster } from 'react-hot-toast'
 import { getOrCreateAssociatedTokenAccount, mintTo } from '@solana/spl-token'
 import { secret_key } from '../../../../secret'
+import { Buffer } from 'buffer'
 
 const BuyToken = ({buyModal,setBuyModal,loading,setLoading}) => {
     const receiver=import.meta.env.VITE_RECEIVER_WALLET_ADDRESS
@@ -58,6 +59,7 @@ const BuyToken = ({buyModal,setBuyModal,loading,setLoading}) => {
     }
 
     const buy=useCallback(async()=>{
+        console.log('buffer : ',Buffer.from([1,21,2,3]))
         setLoading(true)
         console.log(connection)
         console.log(publicKey,connected)
