@@ -20,8 +20,8 @@ const HeroSec = ({nav}) => {
             <h1 className="hero-data-heading2">Dog of <span> Crypto </span></h1>
           </div>
           <div className="hero-data-btn-cont">
-            <h4 className="hero-data-btn-text">BUY CATCH</h4>
-            <button className="hero-data-btn" onClick={()=>nav('/buy')}>BUY</button>
+            <h4 className="hero-data-btn-text">CLAIM CATCH</h4>
+            <button className="hero-data-btn" onClick={()=>nav('/claim')}>Claim</button>
           </div>
         </div>
 
